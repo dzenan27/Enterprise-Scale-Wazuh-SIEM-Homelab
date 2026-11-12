@@ -1,29 +1,38 @@
-# Enterprise-Scale Wazuh SIEM Homelab
+<div align="center">
 
-> A Wazuh 4.14 all-in-one SIEM monitoring a Windows Server 2019 domain controller and a domain-joined Windows 10 client behind pfSense. This repo documents the configuration, the log pipeline, and the detections validated end to end.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Wazuh%20SIEM%20Homelab&fontSize=42&fontColor=ffffff&animation=fadeIn&desc=Enterprise-Scale%20Detection%20Lab%20%7C%20AD%20%7C%20pfSense%20%7C%20Proxmox&descAlignY=68&descSize=18" alt="Wazuh SIEM Homelab banner" />
 
+**A Wazuh 4.14 all-in-one SIEM monitoring a Windows Server 2019 domain controller and a domain-joined Windows 10 client behind pfSense. This repo documents the configuration, the log pipeline, and the detections validated end to end.**
 
+![Status](https://img.shields.io/badge/Completed-2ea44f?style=for-the-badge)
+![Type](https://img.shields.io/badge/Portfolio_Project-7b2cbf?style=for-the-badge)
+[![Author](https://img.shields.io/badge/Built_by-Dzenan_Muratovic-00b4d8?style=for-the-badge)](https://github.com/dzenan27)
 
+<br/>
+
+![Wazuh](https://img.shields.io/badge/Wazuh_4.14-005571?style=flat-square&logo=wazuh&logoColor=white)
+![Proxmox](https://img.shields.io/badge/Proxmox_VE_9.2-E57000?style=flat-square&logo=proxmox&logoColor=white)
+![pfSense](https://img.shields.io/badge/pfSense_2.8.1-212121?style=flat-square&logo=pfsense&logoColor=white)
+![Tailscale](https://img.shields.io/badge/Tailscale-242424?style=flat-square&logo=tailscale&logoColor=white)
+
+![Windows Server](https://img.shields.io/badge/Windows_Server_2019-0078D4?style=flat-square&logo=windows&logoColor=white)
+![Active Directory](https://img.shields.io/badge/Active_Directory-0078D4?style=flat-square&logo=windows&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
+
+<br/>
+
+**Jump to:**
+[Overview](#overview) • [Demo](#demo) • [Architecture](#architecture) • [Inventory](#inventory) • [Network](#network) • [Directory](#ad) • [Wazuh](#wazuh) • [Agents](#agents) • [GPO](#gpo) • [Pipeline](#pipeline) • [Detections](#detections) • [Troubleshooting](#troubleshooting) • [Security](#security) • [Roadmap](#roadmap) • [Skills](#skills)
+
+</div>
+
+---
+
+<a id="demo"></a>
+## 🎬 Demo Walk-Through
 
 https://github.com/user-attachments/assets/2ab1bf13-8dd9-4e92-a6e5-b51482fbdb16
-
-
-**Contents**
-
-1. [Overview](#overview)
-2. [Architecture](#architecture)
-3. [Lab inventory](#inventory)
-4. [Network path for the SIEM](#network)
-5. [Monitored directory](#ad)
-6. [Wazuh server configuration](#wazuh)
-7. [Agent enrollment](#agents)
-8. [Windows audit policy (GPO)](#gpo)
-9. [Log pipeline](#pipeline)
-10. [Detection validation](#detections)
-11. [Troubleshooting log](#troubleshooting)
-12. [Security considerations and limitations](#security)
-13. [Roadmap](#roadmap)
-14. [Skills demonstrated](#skills)
 
 ---
 
@@ -627,6 +636,14 @@ df -h /                                                  # verify
 
 ---
 
-**Related:** [Profile](https://github.com/dzenan27) • [Active Directory Hardening Lab](https://github.com/dzenan27/Active-Directory-Hardening-Lab)
+<div align="center">
 
+*This lab is a portfolio and educational project built to practice the full SOC detection loop, from deployment to validated alerts.*
 
+[![GitHub](https://img.shields.io/badge/More_projects-dzenan27-181717?style=for-the-badge&logo=github)](https://github.com/dzenan27)
+[![AD Hardening Lab](https://img.shields.io/badge/AD_Hardening_Lab-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/dzenan27/Active-Directory-Hardening-Lab)
+[![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/dzenanm)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" alt="footer" />
+
+</div>
