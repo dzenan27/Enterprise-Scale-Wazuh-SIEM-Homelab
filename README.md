@@ -2,6 +2,12 @@
 
 > A Wazuh 4.14 all-in-one SIEM monitoring a Windows Server 2019 domain controller and a domain-joined Windows 10 client behind pfSense. This repo documents the configuration, the log pipeline, and the detections validated end to end.
 
+
+
+
+https://github.com/user-attachments/assets/2ab1bf13-8dd9-4e92-a6e5-b51482fbdb16
+
+
 **Contents**
 
 1. [Overview](#overview)
